@@ -1,0 +1,453 @@
+*
+    box-sizing: border-box
+// section 1
+.section1
+    width: 100%
+    height: 100vh
+    position: relative
+    .hero-image
+        background: url(../img/banner.jpg)
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        filter: brightness(0.5)
+    .section1-text
+        text-align: center
+        color: white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 60%
+        font-size: 1.5vw
+        h1
+            font-size: 3vw
+        p
+            margin: 6vh
+            color: $gray
+        a
+            background-color: $red
+            padding: 1vw 2vw
+            color: white
+            text-decoration: none
+            border-radius: 1vw
+            user-select: none
+        a:hover
+            background-color: #a70629
+
+// section 2
+.section2
+    height: 70vh
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    .sec2-div1
+        width: 30%
+        height: 60%
+        h1
+            font-size: 2vw
+            text-transform: uppercase
+            width: 60%
+
+        p
+            margin-top: 5%
+            font-size: 1vw
+            text-transform: uppercase
+            color: $gray
+            line-height: 4vh
+
+    .sec2-div2
+        font-size: 1vw
+        display: flex
+        flex-direction: column
+        align-items: start
+        width: 30%
+        height: 60%
+        line-height: 4vh
+        color: $gray
+        p + p
+            margin-top: 2vh
+// section 3 
+.section3
+    height: 90vh
+    background-color: $beige
+    position: relative
+    .texts
+        position: absolute
+        left: 50%
+        top: 5%
+        transform: translate(-50%)
+        text-align: center
+        font-size: 2vw
+        h3
+            font-size: 1.5vw
+            margin-top: 2vh
+            color: $gray
+    // Cards
+    .cards-div
+        width: 70%
+        height: 60%
+        background-color: $beige
+        position: absolute
+        top: 25%
+        left: 15%
+        display: flex
+        justify-content: space-evenly
+        .card
+            width: 40%
+            height: 100%
+            background-color: white
+            text-align: center
+            img
+                width: 100%
+                height: 80%
+            .card-text
+                font-weight: 600
+                font-size: 1.5vw
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 20%
+        // buttons div
+    .sect3-buttons
+        width: 30%
+        height: 105
+        position: absolute
+        top: 87%
+        left: 50%
+        transform: translate(-50%)
+        display: flex
+        justify-content: space-evenly
+        button
+            padding: 1vw 2vw
+            border-radius: 10px
+            border: none
+            cursor: pointer
+        button:first-child
+            background-color: $red
+        button:first-child:hover
+            background-color: #9e0e0e
+        button:last-child
+            background-color: black
+        button:last-child:hover
+            background-color: #fff
+            border: 1px solid black
+            a
+                color: black
+        a
+            text-decoration: none
+            font-size: 1.5vw
+            color: white
+.section4
+    height: 90vh
+    position: relative
+    .sec4-texts
+        position: absolute
+        top: 10%
+        left: 10%
+        text-transform: uppercase
+        font-size: 1.5vw
+        h3
+            color: $gray
+            font-weight: 100
+            margin-top: 1vh
+    .img-and-description-div
+        width: 80%
+        height: 60%
+        position: absolute
+        top: 30%
+        left: 10%
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        font-size: 1vw
+        .img-and-description
+            width: 45%
+            height: 40%
+            display: flex
+            align-items: center
+            justify-content: space-around
+            line-height: 5vh
+            img
+                margin-inline: 1vw
+                width: 12vw
+                height: 18vh
+                border: 4px solid $gray
+                border-radius: 50%
+        .first
+            text-align: end
+.section5
+    height: 50vh
+    position: relative
+    .sec5-hero-img
+        background: url(../img/banner.jpg)
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        filter: brightness(0.3)
+    .sec5-text
+        text-align: center
+        color: white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 60%
+        font-size: 1.5vw
+    h1
+        font-size: 3vw
+    p
+        margin: 6vh
+        color: $gray
+    a
+        background-color: $red
+        padding: 1vw 2vw
+        color: white
+        text-decoration: none
+        border-radius: 1vw
+        user-select: none
+    a:hover
+        background-color: #a70629
+
+
+
+
+// mobile version 
+
+
+    
+
+@media ( max-width:425px  )
+    .section1
+        width: 100%
+        height: 100vh
+        position: relative
+        .hero-image
+            background: url(../img/banner.jpg)
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-size: cover
+            filter: brightness(0.4)
+        .section1-text
+            text-align: center
+            color: white
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 90%
+            font-size: 3vw
+            border: 1px solid white
+            padding: 5vw
+
+            h1
+                font-size: 6vw
+            p
+                margin: 4vh
+                line-height: 4vh
+                color: $gray
+            a
+                background-color: $red
+                padding: 2vw 4vw
+                color: white
+                text-decoration: none
+                border-radius: 1vw
+                user-select: none
+            a:hover
+                background-color: #a70629
+
+    // section 2 mobile
+
+    .section2
+        height: 70vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        .sec2-div1
+            width: 95%
+            height: fit-content
+            h1
+                font-size: 4vw
+                text-transform: uppercase
+                width: 100%
+                text-align: center
+
+            p
+                margin-top: 5%
+                font-size: 3vw
+                text-transform: uppercase
+                color: $gray
+                line-height: 4vh
+
+        .sec2-div2
+
+            font-size: 3vw
+            display: flex
+            flex-direction: column
+            align-items: start
+            width: 95%
+            height: 60%
+            line-height: 4vh
+            color: $gray
+            p + p
+                margin-top: 2vh
+    // section 3 mobile
+    .section3
+        height: 120vh
+        background-color: $beige
+        position: relative
+        .texts
+            width: 100%
+            position: absolute
+            left: 50%
+            top: 5%
+            transform: translate(-50%)
+            text-align: center
+            font-size: 3vw
+            h3
+                font-size: 3vw
+                margin-top: 2vh
+                color: $gray
+        // Cards
+        .cards-div
+            width: 100%
+            height: 70%
+            background-color: $beige
+            position: absolute
+            top: 20%
+            left: 0%
+            flex-wrap: wrap
+            justify-content: space-evenly
+            .card
+                width: 100%
+                height: 50%
+                background-color: white
+                text-align: center
+                img
+                    width: 100%
+                    height: 80%
+                .card-text
+                    font-weight: 600
+                    font-size: 3vw
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    height: 20%
+            // buttons div
+        .sect3-buttons
+            width: 100%
+            height: 105
+            position: absolute
+            top: 92%
+            left: 50%
+            transform: translate(-50%)
+            display: flex
+            justify-content: space-evenly
+            button
+                padding: 3vw
+                width: 40%
+                border-radius: 4vw
+                border: none
+                cursor: pointer
+            button:first-child
+                background-color: $red
+            button:first-child:hover
+                background-color: #9e0e0e
+            button:last-child
+                background-color: black
+            button:last-child:hover
+                background-color: #fff
+                border: 1px solid black
+                a
+                    color: black
+            a
+                text-decoration: none
+                font-size: 4vw
+                color: white
+    // section 4 mobile 
+    .section4
+        height: 120vh
+        position: relative
+        .sec4-texts
+            width: 100%
+            position: absolute
+            top: 5%
+            left: 0%
+            text-transform: uppercase
+            font-size: 2.5vw
+            text-align: center
+            h3
+                color: $gray
+                font-weight: 100
+                margin-top: 1vh
+        .img-and-description-div
+            width: 100%
+            height: 50%
+            position: absolute
+            top: 10%
+            left: 0%
+            display: flex
+            justify-content: space-evenly
+            flex-wrap: wrap
+            font-size: 2.8vw
+            .img-and-description
+                width: 90%
+                height: 40%
+                display: flex
+                align-items: center
+                justify-content: space-around
+                line-height: 5vh
+                img
+                    margin-inline: 1vw
+                    width: 25vw
+                    height: 18vh
+                    border: 4px solid $gray
+                    border-radius: 50%
+            .first
+                text-align: end
+
+    // section 5 mobile
+    .section5
+        height: 50vh
+        position: relative
+        .sec5-hero-img
+            background: url(../img/banner.jpg)
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            filter: brightness(0.3)
+        .sec5-text
+            text-align: center
+            color: white
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 100%
+            font-size: 3vw
+            border: 1px solid white
+            padding: 5vw
+
+        h1
+            font-size: 4vw
+        p
+            margin: 6vh
+            color: $gray
+        a
+            background-color: $red
+            padding: 1vw 2vw
+            color: white
+            text-decoration: none
+            border-radius: 1vw
+            user-select: none
+        a:hover
+            background-color: #a70629
